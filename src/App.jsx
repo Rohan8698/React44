@@ -99,22 +99,19 @@
 
 
 
-// ! props children example
 import React from 'react'
-import PropsChildrenEx from './propsexample/PropsChildrenEx'
-import ChildProps from './propsexample/ChildProps'
-
+import FBCStateEx from './propsexample/FBCStateEx'
 const App = () => {
   return (
     <div>
-      <PropsChildrenEx username="Rohannn" company="Meta">
-        <h1>This data is passed as props children</h1>
-        <ChildProps/>
-      </PropsChildrenEx>
+      <FBCStateEx/>
     </div>
   )
 }
 
 export default App
+
+
+
 
 
