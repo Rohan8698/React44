@@ -100,11 +100,11 @@
 
 
 import React from 'react'
-import FBCStateEx from './propsexample/FBCStateEx'
+import FunctionalComponents from './components/FunctionalComponents'
 const App = () => {
   return (
     <div>
-      <FBCStateEx/>
+      <FunctionalComponents city="Hyderabad" state="Telangana"/>
     </div>
   )
 }
