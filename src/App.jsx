@@ -100,11 +100,11 @@
 
 
 import React from 'react'
-import FunctionalComponents from './components/FunctionalComponents'
+import Myform from './components/Myform'
 const App = () => {
   return (
     <div>
-      <FunctionalComponents city="Hyderabad" state="Telangana"/>
+      <Myform></Myform>
     </div>
   )
 }
