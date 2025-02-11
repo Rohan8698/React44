@@ -136,6 +136,15 @@
 // export default ExUseEffect
 
 
+import React from 'react'
+import RefExamples from './RefExamples'
 
+const App = () => {
+  return (
+    <div><RefExamples></RefExamples></div>
+  )
+}
+
+export default App
 
 
