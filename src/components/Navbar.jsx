@@ -1,12 +1,16 @@
-import React from "react";
+import React from 'react'
+import Logo from './Logo'
+import MenuLinks from './MenuLinks'
+import Styles from "./navbar.module.css";
+const Navbar = () => {
+  return (
+    <section id={Styles.navBlock}>
+        <article>
+            <Logo/>
+            <MenuLinks/>
+        </article>
+    </section>
+  )
+}
 
-const Navbar=()=>{
-    
-        return(
-            <div>
-                <h1>Navbar</h1>
-            </div>
-        )
-    }
-
-export default Navbar;
+export default Navbar
