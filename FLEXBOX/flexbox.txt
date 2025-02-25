@@ -1,0 +1,37 @@
+css flex:
+moving element with respect to the main axis is called flex css flex is one dimensional
+by defau;t csss flex is responsive
+
+css flex properties;
+
+1)display flex;
+it is used to convert block level html elements to inline elements20gap
+
+2)gap;
+it is used to provide gap between html elements
+justify-content:flex.start/flex.end/center/space-between/space-around/space-evenly
+it is used to move the html elements in horizontal direction(main.axis)
+default value is stretch
+to work with aligh items property is mandatory
+
+order:
+it is used to change the order of the html elementsdefault value is "0"
+wx order:-1;
+
+flex-direction:row/row-reverse/column/column-rreverse
+
+it is used to change the direction of the html elementsdefault value is row
+flex is wrap:wrap"ap:wrap
+
+
+
+
+
+
+
+
+
+
+
+
+

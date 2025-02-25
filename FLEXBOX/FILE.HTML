@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            gap:20px;
+            justify-content: space-evenly;
+            align-items : stretch;
+            height:100vh;
+            flex-direction:column;
+
+        }
+        .common{
+            height: 200px;
+            width: 200px;
+            border: 1px solid grey;
+            color: rgb(255, 255, 255);
+        }
+        .C1{
+            background-color: red;
+        }
+        .C2{
+            background-color: rgb(34, 0, 255);
+        }
+        .C3{
+            background-color: rgb(0, 255, 4);
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+    <section class="common C1">Child 1</section>
+    <section class="common C2">Child 2</section>
+    <section class="common C3">Child 3</section>
+    <section class="common C1">Child 1</section>
+    <section class="common C2">Child 2</section>
+    <section class="common C3">Child 3</section>
+    <section class="common C1">Child 1</section>
+    <section class="common C2">Child 2</section>
+    <section class="common C3">Child 3</section>
+    <section class="common C1">Child 1</section>
+    <section class="common C2">Child 2</section>
+    <section class="common C3">Child 3</section>
+    
+    </section>
+    
+</body>
+</html>

@@ -5,37 +5,63 @@ class MyForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            textValue: '',
-            skill: 'view'
+            username: '',
+            email: '',
+            password: '',
+            gender: '',
+            address: '',
+            file: null
         };
     }
 
-    changeTextValue = (event) => {
-        this.setState({ textValue: event.target.value });
-    };
-
-    changeSkill = (event) => {
-        this.setState({ skill: event.target.value });
+    handleChange = (event) => {
+        const { name, value, type } = event.target;
+        this.setState({ [name]: type === "file" ? event.target.files[0] : value });
     };
 
     submitValues = (event) => {
         event.preventDefault();
-        alert(`Form is submitted: ${this.state.textValue} ${this.state.skill}`);
+        console.log(this.state);
     };
 
     render() {
         return (
             <div>
-                <form onSubmit={this.submitValues}>
-                    <label>First Name</label>
-                    <input type="text" value={this.state.textValue} onChange={this.changeTextValue} />
+                <form onSubmit={this.submitValues} className="form-container">
+                    <label>Username</label>
+                    <input type="text" name="username" value={this.state.username} onChange={this.handleChange} required />
                     <br />
-                    <label>Skill</label>
-                    <select value={this.state.skill} onChange={this.changeSkill}>
-                        <option value="react">React</option>
-                        <option value="angular">Angular</option>
-                        <option value="view">View</option>
-                    </select>
+                    <label>Email</label>
+                    <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+                    <br />
+                    <label>Password</label>
+                    <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+                    <br />
+
+                    {/* Gender Section */}
+                    <label>Gender</label>
+                    <div className="gender-group">
+                        <div className="gender-option">
+                            <input type="radio" name="gender" value="male" onChange={this.handleChange} />
+                            <label>Male</label>
+                        </div>
+                        <div className="gender-option">
+                            <input type="radio" name="gender" value="female" onChange={this.handleChange} />
+                            <label>Female</label>
+                        </div>
+                        <div className="gender-option">
+                            <input type="radio" name="gender" value="other" onChange={this.handleChange} />
+                            <label>Other</label>
+                        </div>
+                    </div>
+
+                    <br />
+                    <label>Address</label>
+                    <textarea name="address" value={this.state.address} onChange={this.handleChange}></textarea>
+                    <br />
+                    <label>File</label>
+                    <input type="file" name="file" onChange={this.handleChange} />
+                    <br />
                     <button type="submit">Submit</button>
                 </form>
             </div>

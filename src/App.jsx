@@ -136,15 +136,69 @@
 // export default ExUseEffect
 
 
-import React from 'react'
-import RefExamples from './RefExamples'
+// import React from 'react'
+// import Myform from './components/Myform'
 
-const App = () => {
-  return (
-    <div><RefExamples></RefExamples></div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div><Myform></Myform></div>
+//   )
+// }
 
-export default App
+// export default App
+
+
+// import React from 'react'
+// import Navbar from './components/Navbar'
+// import {BrowserRouter , Routes , Route} from "react-router-dom";
+// import Dashboard from './pages/Dashboard';
+// import ClassRoom from './pages/ClassRoom';
+// import Assessment from './pages/Assessment';
+// import Store from './pages/Store';
+// import Calender from './pages/Calender';
+// import News from './pages/News';
+// import Blog from './pages/Blog';
+// import PageNotFound from './pages/PageNotFound';
+// import Profile from './pages/Profile';
+// import MyAccounts from './pages/MyAccounts';
+// import MySettings from './pages/MySettings';
+
+
+// const App = () => {
+//   return (
+    
+//     <BrowserRouter>
+//         <Navbar/>
+//         <Routes>
+//             <Route path='/' element={<Dashboard/>}/>
+//             <Route path='/classroom' element={<ClassRoom/>}/>
+//             <Route path='/assessment' element={<Assessment/>}/>
+//             <Route path='/store' element={<Store/>}/>
+//             <Route path='/calender' element={<Calender/>}/>
+//             <Route path='/news' element={<News/>}/>
+//             <Route path='/blog' element={<Blog/>}/>
+//             <Route path='/profile' element={<Profile/>}>
+//                 <Route path='myaccount' element={<MyAccounts/>}/>
+//                 <Route path='mysettings' element={<MySettings/>}/>
+//             </Route>
+//             <Route path='*' element={<PageNotFound/>}/>
+//         </Routes>
+//     </BrowserRouter>
+//   )
+// }
+
+// export default App
+
+
+// import Home from "./netflix/Home";
+
+// export default function App() {
+//   return <Home />;
+// }
+
+
+
+
+
 
 
